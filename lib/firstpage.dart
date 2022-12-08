@@ -19,18 +19,15 @@ class FirstPage extends StatelessWidget {
       body: Column(children: [
         Image.asset(
           "assets/image/A.jpg",
+        ),
+        Row(
+          children: [
+            Column(
+              children: const [Text('ooooo'), Text('kkkkk')],
+            )
+          ],
         )
       ]),
-    );
-  }
-
-  Row buildTitle() {
-    return Row(
-      children: [
-        Column(
-          children: const [Text('ooooo'), Text('kkkkk')],
-        )
-      ],
     );
   }
 }
